@@ -15,8 +15,14 @@ public class ConverterTransactionsToTransactionsResponse implements Converter<Li
 
     @Override
     public TransactionsResponse convert(List<Transactions> source) {
+
+        // Initialize response object
         TransactionsResponse response = new TransactionsResponse();
+
+        // Initialize date formater for output
         SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        // Set response data
         response.setData(source.stream()
                 .map(transaction -> {
                     TransactionDetail detail = new TransactionDetail();
@@ -32,7 +38,7 @@ public class ConverterTransactionsToTransactionsResponse implements Converter<Li
                 })
                 .toList());
         
-        // Assuming Status is a predefined class and we have a method to get statuses
+        // Set response status
         response.setStatus(getStatuses());
         
         return response;
