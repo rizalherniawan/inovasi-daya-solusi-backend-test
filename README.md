@@ -14,4 +14,7 @@ To do maven installation, running this command **mvn clean install** <br>
 To run the project, running this command **mvn spring-boot:run** <br><br>
 
 **Created Endpoint**  
-GET v1/api/transactions
+GET v1/api/transactions <br>
+
+Responses:
+![Image](https://github.com/user-attachments/assets/85e66cb5-8009-4dde-8e5d-d19018b51e35)
