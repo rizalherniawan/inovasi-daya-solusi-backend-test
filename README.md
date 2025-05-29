@@ -8,4 +8,10 @@ Relations:
 
 
 **Notes:**    
-Before execute the code, setup the .env file first by defining value from .env.example into .env file
+Before execute the code, setup the .env file first by defining value from .env.example into .env file <br><br>
+
+To do maven installation, running this command **mvn clean install** <br>
+To run the project, running this command **mvn spring-boot:run** <br><br>
+
+**Created Endpoint**  
+GET v1/api/transactions
